@@ -1,0 +1,52 @@
+form {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    background: #eee;
+    padding: 2em;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+}
+
+.btn {
+    width: 100%;
+    background: darkorange;
+    border: none;
+    padding: 0.5em 0.9em;
+    border-radius: 0.9em;
+    color: white;
+}
+
+.btn:hover, ::file-selector-button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+::file-selector-button {
+    background: darkorange;
+    margin-right: 1em;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.6em;
+}
+
+.images-div {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    background: #eee;
+    width: 54.75%;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+}
+
+.images-div img {
+    width: 200px;
+    height: 200px;
+}
