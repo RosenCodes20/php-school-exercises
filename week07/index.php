@@ -73,4 +73,5 @@ foreach ($person as $people) {
     echo "Person id: " . $people['id'] . "<br>";
     echo "Person name: " . $people['personName'];
 }
+echo "</div>";
 ?>
