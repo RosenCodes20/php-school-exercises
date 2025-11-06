@@ -18,9 +18,9 @@
 
 <?php
     $servername = "127.0.0.1";
-	$username = "";
-	$password = "";
-	$database = "";
+	$username = "root";
+	$password = "rootpassword";
+	$database = "school_exercises";
 
 	try {
 	  $connection = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
