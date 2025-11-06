@@ -72,13 +72,17 @@ $peopleArr = array(
 );
 
 echo "<div class='people'>";
-$counter = 0;
 foreach ($person as $people) {
-    echo "Person id: " . $people['id'] . "<br>";
-    echo "Person name: " . $people['personName'];
-    $counter++;
-    $peopleArr[$people['personName']] = $people['personName'];
+//    echo "Person id: " . $people['id'] . "<br>";
+//    echo "Person name: " . $people['personName'];
+    if (!isset($peopleArr[$people['personName']])) {
+        $peopleArr[$people['personName']] = 1;
+    } else {
+        $peopleArr[$people['personName']]++;
+    }
 }
 echo "</div>";
+
+
 print_r($peopleArr);
 ?>
