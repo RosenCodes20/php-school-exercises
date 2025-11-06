@@ -62,6 +62,11 @@ form > button:hover {
 }
 
 .people > p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p > i {
+    color: #F6C135;
+    margin-left: 0.5em;
 }

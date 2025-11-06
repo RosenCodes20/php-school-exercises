@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <form method="post" <?php if ( isset( $_POST['submit'])) echo "class='br-fix'" ?>>
@@ -71,23 +72,28 @@ $peopleArr = array(
 
 );
 
-echo "<div class='people'>";
-foreach ($person as $people) {
+if (!$person) {
+    echo "<div class='people'>" . "<p class='p-nth-base'>Няма нищо в базата все още<i class='fa-solid fa-face-frown'></i></p>" . "</div>";
+} else {
+
+    echo "<div class='people'>";
+    foreach ($person as $people) {
 //    echo "Person id: " . $people['id'] . "<br>";
 //    echo "Person name: " . $people['personName'];
-    if (!isset($peopleArr[$people['personName']])) {
-        $peopleArr[$people['personName']] = 1;
-    } else {
-        $peopleArr[$people['personName']]++;
+        if (!isset($peopleArr[$people['personName']])) {
+            $peopleArr[$people['personName']] = 1;
+        } else {
+            $peopleArr[$people['personName']]++;
+        }
     }
-}
 
-foreach ($peopleArr as $personName => $personCount) {
-    if ($personCount == 1) {
-        echo "<p>" . $personName . " се среща в базата " . $personCount . " път" . "</p>";
-    } else {
-        echo "<p>" . $personName . " се среща в базата " . $personCount . " пъти" . "</p>";
+    foreach ($peopleArr as $personName => $personCount) {
+        if ($personCount == 1) {
+            echo "<p>" . $personName . " се среща в базата " . $personCount . " път" . "</p>";
+        } else {
+            echo "<p>" . $personName . " се среща в базата " . $personCount . " пъти" . "</p>";
+        }
     }
+    echo "</div>";
 }
-echo "</div>";
 ?>
