@@ -62,5 +62,6 @@ form > button:hover {
 }
 
 .people > p {
-
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
