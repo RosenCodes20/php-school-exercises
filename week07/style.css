@@ -57,8 +57,8 @@ form > button:hover {
 }
 
 .br-fix {
-    border-bottom-left-radius: 0.9em;
-    border-bottom-right-radius: 0.9em;
+    /*border-bottom-left-radius: 0.9em;*/
+    /*border-bottom-right-radius: 0.9em;*/
 }
 
 .people > p {
