@@ -90,6 +90,4 @@ foreach ($peopleArr as $personName => $personCount) {
     }
 }
 echo "</div>";
-
-print_r($peopleArr)
 ?>
