@@ -67,11 +67,18 @@ if (isset($_POST['submit'])) {
 $stmt = $connection->query("SELECT * FROM person");
 $person = $stmt->fetchAll();
 
-echo "<div class='people'>";
+$peopleArr = array(
 
+);
+
+echo "<div class='people'>";
+$counter = 0;
 foreach ($person as $people) {
     echo "Person id: " . $people['id'] . "<br>";
     echo "Person name: " . $people['personName'];
+    $counter++;
+    $peopleArr[$people['personName']] = $people['personName'];
 }
 echo "</div>";
+print_r($peopleArr);
 ?>
