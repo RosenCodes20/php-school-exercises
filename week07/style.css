@@ -70,3 +70,9 @@ p > i {
     color: #F6C135;
     margin-left: 0.5em;
 }
+
+.p-nth-base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
