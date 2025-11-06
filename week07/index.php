@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form method="post" <?php if ( !isset( $_POST['submit'])) echo "class='br-fix'" ?>>
+<form method="post" <?php if ( isset( $_POST['submit'])) echo "class='br-fix'" ?>>
     <label for="name">Въведи име на човека:</label>
     <input type="text" name='name' id='name' placeholder="Въведи име на човека......" required>
 
