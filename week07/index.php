@@ -67,6 +67,10 @@ if (isset($_POST['submit'])) {
 $stmt = $connection->query("SELECT * FROM person");
 $person = $stmt->fetchAll();
 
-print_r($person);
+echo "<div class='people'>";
 
+foreach ($person as $people) {
+    echo "Person id: " . $people['id'] . "<br>";
+    echo "Person name: " . $people['personName'];
+}
 ?>
