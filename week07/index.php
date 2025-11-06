@@ -81,8 +81,15 @@ foreach ($person as $people) {
         $peopleArr[$people['personName']]++;
     }
 }
+
+foreach ($peopleArr as $personName => $personCount) {
+    if ($personCount == 1) {
+        echo $personName . " се среща в базата " . $personCount . " път" . "<br>";
+    } else {
+        echo $personName . " се среща в базата " . $personCount . " пъти" . "<br>";
+    }
+}
 echo "</div>";
 
-
-print_r($peopleArr);
+print_r($peopleArr)
 ?>
