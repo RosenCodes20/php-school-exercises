@@ -57,11 +57,11 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO person (personName, age) VALUES (?, ?)";
     $connection->prepare($sql)->execute([$name, $age]);
 
-    echo "<div class='result'>";
-    echo "<p>Успешно създадохте нов човек в базата данни!</p>";
-    echo "<p>С име: $name</p>";
-    echo "<p>На: $age години</p>";
-    echo "</div>";
+//    echo "<div class='result'>";
+//    echo "<p>Успешно създадохте нов човек в базата данни!</p>";
+//    echo "<p>С име: $name</p>";
+//    echo "<p>На: $age години</p>";
+//    echo "</div>";
 }
 
 $stmt = $connection->query("SELECT * FROM person");
