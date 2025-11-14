@@ -1,0 +1,39 @@
+.logout-div {
+    background: #eee;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7em;
+    gap: 0.5em;
+}
+
+.logout-btns {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+form > input {
+    background: green;
+    color: white;
+    padding: 0.4em 1.5em;
+    border: none;
+    border-radius: 0.6em;
+}
+
+.no-btn > button {
+    background: red;
+    color: white;
+    padding: 0.4em 1.5em;
+    border: none;
+    border-radius: 0.6em;
+}
+
+form > input:hover, .no-btn > button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
