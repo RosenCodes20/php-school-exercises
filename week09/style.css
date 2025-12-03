@@ -83,7 +83,7 @@ p > a {
     font-size: 1.5em;
 }
 
-.step-links-buttons a, .step-links-buttons span.current {
+.step-links-buttons {
     font-size: 20px;
     color: white;
     padding: 10px 15px;
@@ -93,9 +93,10 @@ p > a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.step-links-buttons a:hover {
+.step-links-buttons:hover {
     background-color: black;
     color: darkorange;
+    cursor: pointer;
 }
 
 .step-links-buttons span.current {

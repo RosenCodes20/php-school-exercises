@@ -1,3 +1,10 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+</html>
+
 <?php
     $servername = "127.0.0.1";
     $username = "myuser";
@@ -26,6 +33,8 @@
                     echo "<p>Products count: $product[productsCount]</p>";
 
                     echo "<p>Product producer: $product[productProducer]</p>";
+
+                    echo "<a class='step-links-buttons'>Виж повече</a>";
                 echo "</div>";
             echo "</section>";
         echo "</section>";
