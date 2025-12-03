@@ -23,8 +23,8 @@
        productImageLink, productsCount, productProducer FROM product");
     $stmt->execute();
     $products = $stmt->fetchAll();
+    echo "<section class='sell-items'>";
     foreach ($products as $product) {
-        echo "<section class='sell-items'>";
             echo "<section class='item-for-sale'>";
                 echo "<img src='$product[productImageLink]'>";
                 echo "<div class='text-items'>";
@@ -37,6 +37,6 @@
                     echo "<a class='step-links-buttons'>Виж повече</a>";
                 echo "</div>";
             echo "</section>";
-        echo "</section>";
     }
+    echo "</section>";
 ?>
