@@ -21,7 +21,11 @@
             echo "<section class='item-for-sale'>";
                 echo "<img src='$product[productImageLink]'>";
                 echo "<div class='text-items'>";
+                    echo "<h2>$product[productType]</h2>";
 
+                    echo "<p>Products count: $product[productsCount]</p>";
+
+                    echo "<p>Product producer: $product[productProducer]</p>";
                 echo "</div>";
             echo "</section>";
         echo "</section>";
