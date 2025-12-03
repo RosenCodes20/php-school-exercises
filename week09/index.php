@@ -15,13 +15,11 @@
     $stmt = $connection->prepare("SELECT productType, 
        productImageLink, productsCount, productProducer FROM product");
     $stmt->execute();
-    $products = $stmt->fetch();
-
+    $products = $stmt->fetchAll();
     foreach ($products as $product) {
-        echo($product);
         echo "<section class='sell-items'>";
             echo "<section class='item-for-sale'>";
-                echo "<img src=''>";
+                echo "<img src='$product[productImageLink]'>";
                 echo "<div class='text-items'>";
 
                 echo "</div>";
