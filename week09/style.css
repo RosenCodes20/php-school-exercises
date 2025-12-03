@@ -1,0 +1,29 @@
+.sell-items > .item-for-sale > img {
+    width: 350px;
+    height: 300px;
+    border-radius: 0.3em;
+    object-fit: cover;
+}
+
+.sell-items > section {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 1.5em 2em;
+    border-radius: 0.3em;
+}
+
+.sell-items > section:hover {
+    transform: translateY(-5px);
+    transition: ease-in-out 0.4s;
+}
+
+.sell-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
