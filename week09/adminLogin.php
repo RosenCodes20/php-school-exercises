@@ -24,7 +24,11 @@
 
         if ($user) {
             $_SESSION['user'] = $user;
-            header("location: ");
+            header("location: adminCatalog.php");
+
+            exit();
+        } else {
+            echo "<b style='color:red;'>Невалидни потребителски данни</b><br><br>";
         }
     }
 
@@ -44,7 +48,7 @@
             <label for="pass">Парола:</label>
             <input type="password" name="password" id="pass" class="password" placeholder="Въведи твоята парола.......">
 
-            <button class="login-btn">Вход</button>
+            <button name="submit" class="login-btn">Вход</button>
         </form>
     </article>
     </body>
