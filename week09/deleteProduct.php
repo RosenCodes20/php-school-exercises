@@ -13,6 +13,9 @@
     }
 
     if (isset($_POST['submit'])) {
+        $productType = $_POST['productType'];
+        $stmt = $connection->prepare("DELETE FROM product WHERE productType = ?");
+        $stmt->execute([$productType]);
 
     }
 ?>
