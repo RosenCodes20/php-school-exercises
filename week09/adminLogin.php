@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $servername = "127.0.0.1";
     $username = "myuser";
     $password = "mypassword";
@@ -21,7 +22,10 @@
 
         $user = $stmt->fetch();
 
-        print_r($user);
+        if ($user) {
+            $_SESSION['user'] = $user;
+            header("location: ");
+        }
     }
 
 ?>
