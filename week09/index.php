@@ -34,10 +34,12 @@
     echo "</section>";
 ?>
 
-
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
+    <body>
+      <a href=""></a>
+    </body>
 </html>
