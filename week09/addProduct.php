@@ -34,7 +34,7 @@
     <body>
         <article class="login">
             <form method="post">
-                <h2>Вход</h2>
+                <h2>Добави продукт</h2>
                 <label for="username">Тип на продукта:</label>
                 <input type="text" name="email" id="username" class="email" placeholder="Въведи типа на продукта......">
                 <label for="pass">Снимка:</label>
