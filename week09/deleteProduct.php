@@ -17,6 +17,7 @@
         $stmt = $connection->prepare("DELETE FROM product WHERE productType = ?");
         $stmt->execute([$productType]);
 
+        header("location: adminCatalog.php");
     }
 ?>
 
