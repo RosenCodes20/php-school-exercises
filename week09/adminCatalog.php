@@ -16,6 +16,7 @@
     }
     ?>
     <a href="addProduct.php" class="login" style="margin-left: 1em">Добави продукт</a>
+    <a href="deleteProduct.php" class="login" style="margin-left: 1em">Премахни продукт</a>
 </div>
 </body>
 </html>
