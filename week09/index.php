@@ -5,7 +5,17 @@
 
     <body>
         <div class="links">
-            <a href="adminLogin.php" class="login">Вход</a>
+            <?php
+                session_start();
+                if (!$_SESSION):
+                    echo '<a href="adminLogin.php" class="login">Вход</a>';
+
+                else {
+                    echo "<p class='p-text'>Hi, " . $_SESSION['user']['email'] . "</p>";
+
+                    echo '<a href="./logout.php">Logout</a>';
+                }
+            ?>
         </div>
     </body>
 </html>
