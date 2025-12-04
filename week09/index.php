@@ -7,10 +7,9 @@
         <div class="links">
             <?php
                 session_start();
-                if (!$_SESSION):
+                if (!$_SESSION) {
                     echo '<a href="adminLogin.php" class="login">Вход</a>';
-
-                else {
+                } else {
                     echo "<p class='p-text'>Hi, " . $_SESSION['user']['email'] . "</p>";
 
                     echo '<a href="./logout.php">Logout</a>';

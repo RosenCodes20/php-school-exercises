@@ -5,14 +5,22 @@
 
 <body>
 <div class="links">
-    <a href="adminLogin.php" class="login">Вход</a>
+    <?php
+    session_start();
+    if (!$_SESSION) {
+        echo '<a href="adminLogin.php" class="login">Вход</a>';
+    } else {
+        echo "<p class='p-text'>Hi, " . $_SESSION['user']['email'] . "</p>";
+
+        echo '<a href="./logout.php" class="login" style="margin-left: 1em">Logout</a>';
+    }
+    ?>
     <a href="" class="login" style="margin-left: 1em">Добави продукт</a>
 </div>
 </body>
 </html>
 
 <?php
-    session_start();
     if ($_SESSION['user']) {
         $servername = "127.0.0.1";
         $username = "myuser";
