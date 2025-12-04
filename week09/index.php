@@ -1,3 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="links">
+            <a href="adminLogin.php" class="login">Вход</a>
+        </div>
+    </body>
+</html>
+
 <?php
     $servername = "127.0.0.1";
     $username = "myuser";
@@ -33,13 +45,3 @@
     }
     echo "</section>";
 ?>
-
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-      <a href=""></a>
-    </body>
-</html>

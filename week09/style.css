@@ -151,3 +151,22 @@ p > a {
     border-radius: 1em;
     font-size: 1.3em;
 }
+
+.links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.login {
+    background: darkorange;
+    padding: 0.4em 1.2em;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.7em;
+}
+
+.login:hover {
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
