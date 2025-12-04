@@ -29,7 +29,7 @@ article > form:not(h2), article > form > div {
     flex-direction: column;
 }
 
-#username, #pass, #id_email {
+#username, #pass, #id_email, #producer {
     margin-bottom: 2em;
     border: none;
     border-bottom: 1px solid black;

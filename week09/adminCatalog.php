@@ -15,7 +15,7 @@
         echo '<a href="./logout.php" class="login" style="margin-left: 1em">Logout</a>';
     }
     ?>
-    <a href="" class="login" style="margin-left: 1em">Добави продукт</a>
+    <a href="addProduct.php" class="login" style="margin-left: 1em">Добави продукт</a>
 </div>
 </body>
 </html>
