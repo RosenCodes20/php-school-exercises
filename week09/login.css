@@ -1,0 +1,184 @@
+.login {
+    min-height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial";
+}
+
+article > form {
+    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+    padding: 2em;
+    min-width: 500px;
+    border-radius: 0.5em;
+}
+
+article > form > h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+article > form:hover {
+    transform: translateY(-5px);
+    transition: ease-in-out 0.4s;
+}
+
+article > form:not(h2), article > form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#username, #pass, #id_email {
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.5em 0;
+}
+
+div > label {
+    margin-bottom: 0.6em;
+    font-size: 0.7em;
+}
+
+.forgot-pass {
+    font-size: 0.8em;
+    text-align: right;
+    margin-top: 1em;
+}
+
+.forgot-pass:hover, .registraion-link:hover {
+    color: #3E5A97;
+    transition: 0.3s ease-in;
+}
+
+.forgot-pass {
+    text-decoration: none;
+    color: black;
+}
+
+.login-btn {
+    text-align: center;
+    margin-top: 1.5em;
+    text-decoration: none;
+    padding: 0.6em 0.5em;
+    background: darkorange;
+    color: white;
+    border-radius: 1em;
+    border: none;
+}
+
+.login-btn:hover {
+    opacity: 0.6;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+article > form > h5 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.icons > a:first-child {
+    text-decoration: none;
+    background: #3E5A97;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.icons > a:first-child > i, .icons > a:last-child > i {
+    color: white;
+}
+
+.icons > a:last-child {
+    text-decoration: none;
+    background: #DA4C3E;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.icons > a {
+    border-radius: 50%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+
+.icons > a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.registration-wrap {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.registration-wrap > h5 {
+    margin-bottom: 0.5em;
+}
+
+.registration-wrap > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+article > form > input::placeholder {
+    opacity: 0.6;
+}
+
+article > form > input {
+    padding: 0;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+.errorlist > li {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+    max-width: 600px;
+    text-align: center;
+}
+
+.forgot-pass-h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1358px) {
+    .login {
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 509px) {
+    .login > form {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .login > form {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .login > form {
+        min-width: 300px;
+    }
+}
