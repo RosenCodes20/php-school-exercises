@@ -1,10 +1,3 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-</html>
-
 <?php
     $servername = "127.0.0.1";
     $username = "myuser";
@@ -40,3 +33,11 @@
     }
     echo "</section>";
 ?>
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</html>
