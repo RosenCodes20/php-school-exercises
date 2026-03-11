@@ -28,13 +28,13 @@
     font-size: 1.2em;
 }
 
-.item > a {
+.item > form > button {
     background: orange;
     padding: 0.5em 0.4em;
     border-radius: 50%;
 }
 
-.item > a:hover {
+.item > form > button:hover {
     color: white;
     transition: 0.5s ease-in-out;
     cursor: pointer;
