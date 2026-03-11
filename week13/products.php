@@ -13,6 +13,23 @@
 
     $sql = "SELECT * FROM products";
     $products = $connection->query($sql)->fetchAll();
+
+    if (isset($_POST['add_cart'])) {
+        $foundProduct = [];
+        $sql = "SELECT * FROM products WHERE id=?";
+        $stmt = $connection->prepare($sql);
+        $stmt->execute([$_POST['product_id']]);
+
+        $foundProduct = $stmt->fetch();
+
+        $foundId = $foundProduct['id'];
+
+        $addToCartSql = "INSERT INTO cart (productId)
+                        VALUES (?)";
+
+        $stmtAddToCart = $connection->prepare($addToCartSql);
+        $stmtAddToCart->execute([$foundId]);
+    }
 ?>
 
 <html>
@@ -29,7 +46,10 @@
                 <?php echo "<h4>" . $product['productName'] . "</h4>";?>
                 <?php echo "<p>" . $product['productDescription'] . "</p>";?>
 
-            <a class="add_cart">Добави в количката</a>
+            <form method="post">
+                <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+                <button type="submit" name="add_cart" class="add_cart">Добави в количката</button>
+            </form>
         </div>
         <?php endforeach; ?>
     </div>
